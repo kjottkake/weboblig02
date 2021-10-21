@@ -1,55 +1,51 @@
 @font-face {
     font-family: Montserrat;
     src: url(./assets/fonts/Montserrat-Bold.ttf);
-  }
+}
 
 
 /* mobile and tablet screen size */
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
     /* General Configs */
     html {
         /* background: rgb(245,247,250); */
-        background: linear-gradient(135deg, rgba(245,247,250,1) 0%, rgba(195,207,226,1) 100%);
+        background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, rgba(195, 207, 226, 1) 100%);
         font-family: 'Lato', sans-serif;
         font-size: 14px;
     }
-
-    *{
+    * {
         font-size: 1.2rem;
     }
-
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-family: 'Montserrat', sans-serif;
     }
-
     h1 {
         font-size: 4rem;
     }
-
     h2 {
         font-size: 2.2rem;
     }
-
     p {
         max-width: 70ch;
         line-height: 1.5;
     }
-
     /* header element */
-    header{
+    header {
         height: 55vh;
         background-image: url(./assets/img/studentsbg.png);
         /*Background image will not scroll with page*/
-        background-attachment: fixed; 
-        background-position: center; /*Background image placed at top, and centered horizontally*/
+        background-attachment: fixed;
+        background-position: center;
+        /*Background image placed at top, and centered horizontally*/
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        color:white;
+        color: white;
     }
-
     /* div inside of header */
-    header div{
+    header div {
         padding: 2rem 2rem;
         font-size: 95vw;
         margin: auto;
@@ -58,89 +54,78 @@
         text-align: center;
         top: 4rem;
     }
-
     main {
         box-shadow: 0 0 1px darkgray;
         background-color: whitesmoke;
     }
-
     article {
         margin-top: 2rem;
         padding: 24px 12px;
         margin-top: 2%;
     }
-
-    #intro-container{
+    #intro-container {
         background-color: #c5192d;
     }
-
-    li{
+    li {
         list-style: none;
     }
-
     li:nth-child(1)::before {
         content: "\1F64C";
     }
-
     li:nth-child(2)::before {
         content: "\1F3EB";
     }
-
     li:nth-child(3)::before {
         content: "\1F4DA";
     }
-
-    img{
+    img {
         width: 100%;
     }
-
-    footer{
+    footer {
         background-color: #c5192d;
         color: aliceblue;
         margin-top: 40px;
         padding: 12px;
         text-align: center;
     }
-
-    footer a{
+    footer a {
         /* text-decoration: none; */
         color: aliceblue;
-    } 
+    }
 }
 
 
 /* tablet screen size */
-@media screen and (min-width: 600px) and (max-width: 960px){
- html{
-    font-size: 16px;
- }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    html {
+        font-size: 16px;
+    }
+    header {
+        height: 65vh;
+    }
+    header div {
+        width: 85vw;
+        margin: auto;
+    }
+    main {
+        width: 85vw;
+        margin: auto;
+    }
+    footer {
+        width: 85vw;
+        margin: auto;
+        margin-top: 40px;
+    }
 
- header {
-     height: 65vh;
- }
-
-header div{
-    width: 85vw;
-    margin: auto;
-}   
-
-main {
-    width: 85vw;
-    margin: auto;
-}
-
-footer {
-    width: 85vw;
-    margin: auto;
-    margin-top: 40px;
-}
-
-
-
+    article {
+        column-count: 2;
+    }
 }
 
 
 /* desktop screen size */
+
+
 /* @media screen and (min-width:960px) {
 body{
      background-color: blue;
