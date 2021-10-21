@@ -5,7 +5,7 @@
 
 
 /* mobile and tablet screen size */
-@media screen and (max-width: 960px) {
+@media screen{
     /* General Configs */
     html {
         /* background: rgb(245,247,250); */
@@ -43,6 +43,7 @@
         background-size: cover;
         position: relative;
         color: white;
+        margin-bottom: 20px;
     }
     /* div inside of header */
     header div {
@@ -124,13 +125,3 @@
     }
 }
 
-
-/* desktop screen size */
-
-
-/* @media screen and (min-width:960px) {
-body{
-     background-color: blue;
- }
-}
- */
