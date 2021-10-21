@@ -1,12 +1,33 @@
+/* mobile screen size */
 @media screen and (max-width: 600px) {
-    body {
+    html {
+        background-color: red;
         background: rgb(245,247,250);
         background: linear-gradient(135deg, rgba(245,247,250,1) 0%, rgba(195,207,226,1) 100%);
         font-family: 'Lato' sans-serif;
         font-size: 14px;
+
     }
 
     *{
         font-size: 1.2rem;
     }
 }
+
+
+/* tablet screen size */
+@media screen and (min-width: 600px) and (max-width: 960px){
+ body{
+     background-color: orange;
+     color: seagreen;
+ }
+}
+
+
+/* desktop screen size */
+@media screen and (min-width:960px) {
+body{
+     background-color: blue;
+ }
+}
+
