@@ -54,7 +54,7 @@
         font-size: 95vw;
         margin: auto;
         background-color: #c5192d;
-        position: absolute;
+        position: relative;
         text-align: center;
         top: 4rem;
     }
@@ -93,13 +93,51 @@
     img{
         width: 100%;
     }
+
+    footer{
+        background-color: #c5192d;
+        color: aliceblue;
+        margin-top: 40px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    footer a{
+        /* text-decoration: none; */
+        color: aliceblue;
+    } 
 }
 
 
 /* tablet screen size */
-/* @media screen and (min-width: 600px) and (max-width: 960px){
- 
-} */
+@media screen and (min-width: 600px) and (max-width: 960px){
+ html{
+    font-size: 16px;
+ }
+
+ header {
+     height: 65vh;
+ }
+
+header div{
+    width: 85vw;
+    margin: auto;
+}   
+
+main {
+    width: 85vw;
+    margin: auto;
+}
+
+footer {
+    width: 85vw;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+
+}
 
 
 /* desktop screen size */
