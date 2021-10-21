@@ -4,11 +4,11 @@
   }
 
 
-/* mobile screen size */
-@media screen and (max-width: 600px) {
+/* mobile and tablet screen size */
+@media screen and (max-width: 960px){
     /* General Configs */
-    body {
-        background: rgb(245,247,250);
+    html {
+        /* background: rgb(245,247,250); */
         background: linear-gradient(135deg, rgba(245,247,250,1) 0%, rgba(195,207,226,1) 100%);
         font-family: 'Lato', sans-serif;
         font-size: 14px;
@@ -39,16 +39,24 @@
     header{
         height: 55vh;
         background-image: url(./assets/img/studentsbg.png);
-        background-attachment: fixed; /*Background image will not scroll with page*/
-        background-position: top center; /*Background image placed at top, and centered horizontally*/
+        /*Background image will not scroll with page*/
+        background-attachment: fixed; 
+        background-position: center; /*Background image placed at top, and centered horizontally*/
+        background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        color:white;
     }
 
     /* div inside of header */
     header div{
+        padding: 2rem 2rem;
+        font-size: 95vw;
+        margin: auto;
         background-color: #c5192d;
-        position: relative;
-        top: 4rem; /*pushed down 4rem*/
+        position: absolute;
+        text-align: center;
+        top: 4rem;
     }
 
     main {
@@ -56,9 +64,13 @@
         background-color: whitesmoke;
     }
 
-    #intro-container{
+    article {
+        margin-top: 2rem;
         padding: 24px 12px;
         margin-top: 2%;
+    }
+
+    #intro-container{
         background-color: #c5192d;
     }
 
@@ -77,22 +89,23 @@
     li:nth-child(3)::before {
         content: "\1F4DA";
     }
+
+    img{
+        width: 100%;
+    }
 }
 
 
 /* tablet screen size */
-@media screen and (min-width: 600px) and (max-width: 960px){
- body{
-     background-color: orange;
-     color: seagreen;
- }
-}
+/* @media screen and (min-width: 600px) and (max-width: 960px){
+ 
+} */
 
 
 /* desktop screen size */
-@media screen and (min-width:960px) {
+/* @media screen and (min-width:960px) {
 body{
      background-color: blue;
  }
 }
-
+ */
