@@ -59,9 +59,9 @@
         background-color: whitesmoke;
     }
     article {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         padding: 24px 12px;
-        margin-top: 2%;
+        border: 0.1px solid rgb(226, 225, 225);
     }
     #intro-container {
         background-color: #c5192d;
@@ -79,7 +79,7 @@
         content: "\1F4DA";
     }
     img {
-        width: 100%;
+        width: 90%;
     }
     footer {
         background-color: #c5192d;
@@ -119,6 +119,8 @@
 
     article {
         column-count: 2;
+        column-width: 45%;
+        column-gap: 10%;
     }
 }
 
