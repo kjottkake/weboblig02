@@ -3,125 +3,146 @@
     src: url(./assets/fonts/Montserrat-Bold.ttf);
 }
 
+/* defaults for mobile size*/
+/* General Configs */
+html {
+    /* background: rgb(245,247,250); */
+    background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, rgba(195, 207, 226, 1) 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    font-size: 1.2rem;
+    box-sizing:border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+p {
+    max-width: 70ch;
+    line-height: 1.5;
+}
 
 
-/* mobile and tablet screen size */
-    /* General Configs */
-    html {
-        /* background: rgb(245,247,250); */
-        background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, rgba(195, 207, 226, 1) 100%);
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-    }
-    * {
-        margin: 0;
-        font-size: 1.2rem;
-    }
-    h1,
-    h2,
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-    }
-    h1 {
-        font-size: 4rem;
-        padding-bottom: 2rem;
-    }
-    h2 {
-        font-size: 2.2rem;
-        padding-bottom: 2rem;
-    }
-    p {
-        max-width: 70ch;
-        line-height: 1.5;
-    }
-    /* header element */
-    header {
-        height: 55vh;
-        background-image: url(./assets/img/studentsbg.png);
-        /*Background image will not scroll with page*/
-        background-attachment: fixed;
-        background-position: center;
-        /*Background image placed at top, and centered horizontally*/
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        color: white;
-        margin-bottom: 4rem;
-    }
-    /* div inside of header */
-    header div {
-        padding: 2rem 2rem;
-        font-size: 95vw;
-        margin: auto;
-        background-color: #c5192d;
-        position: absolute;
-        text-align: center;
-        bottom: -4rem;
-        margin-bottom: 4rem;
-    }
-    main {
-        box-shadow: 0 0 1px darkgray;
-        background-color: whitesmoke;
-    }
-    article {
-        /* margin-top: 2rem; */
-        padding: 24px 12px;
-        border: 0.1px solid rgb(226, 225, 225);
-    }
-    #intro-container {
-        background-color: #c5192d;
-    }
-    li {
-        list-style: none;
-    }
-    li:nth-child(1)::before {
-        content: "\1F64C";
-    }
-    li:nth-child(2)::before {
-        content: "\1F3EB";
-    }
-    li:nth-child(3)::before {
-        content: "\1F4DA";
-    }
-    img {
-        width: 90%;
-    }
-    footer {
-        background-color: #c5192d;
-        color: aliceblue;
-        margin-top: 40px;
-        padding: 12px;
-        text-align: center;
-    }
-    footer a {
-        /* text-decoration: none; */
-        color: aliceblue;
-    }
+/* header element */
 
+header {
+    height: 55vh;
+    background-image: url(./assets/img/studentsbg.png);
+    /*Background image will not scroll with page*/
+    background-attachment: fixed;
+    background-position: center top;
+    /*Background image placed at top, and centered horizontally*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    margin-bottom: 4rem;
+}
 
+/* div inside of header */
+
+header div {
+    padding: 2rem 2rem;
+    margin: auto;
+    background-color: #c5192d;
+    position: absolute;
+    text-align: center;
+    bottom: -4rem;
+    width: 95vw;
+    left: 0;
+    right: 0;
+}
+
+main {
+    box-shadow: 0 0 1px darkgray;
+    background-color: whitesmoke;
+    margin-top: 15%;
+}
+
+article {
+    padding: 24px 12px;
+    border: 0.1px solid rgb(226, 225, 225);
+}
+
+#intro-container {
+    background-color: #c5192d;
+}
+
+li {
+    list-style: none;
+}
+
+li:nth-child(1)::before {
+    content: "\1F64C";
+}
+
+li:nth-child(2)::before {
+    content: "\1F3EB";
+}
+
+li:nth-child(3)::before {
+    content: "\1F4DA";
+}
+
+img {
+    width: 90%;
+}
+
+footer {
+    background-color: #c5192d;
+    color: aliceblue;
+    margin-top: 40px;
+    padding: 12px;
+    text-align: center;
+}
+
+footer a {
+    /* text-decoration: none; */
+    color: aliceblue;
+}
 
 /* tablet screen size */
-@media screen and (min-width: 600px) and (max-width: 960px) {
+
+@media screen and (min-width: 600px){
+    * {
+        margin: auto;
+    }
+    
     html {
         font-size: 16px;
+        
     }
     header {
         height: 65vh;
     }
     header div {
         width: 85vw;
-        margin: auto;
+        
     }
     main {
         width: 85vw;
-        margin: auto;
+
     }
     footer {
         width: 85vw;
-        margin: auto;
+
         margin-top: 40px;
     }
-
     article {
         column-count: 2;
         column-width: 45%;
@@ -129,3 +150,17 @@
     }
 }
 
+@media screen and (min-width: 960px){
+    *{
+        font-size: 24px;
+    }
+
+    header {
+        height: 65vh;
+    }
+
+    header div, main, footer {
+        width: 70vw;
+        margin: auto;
+    }
+}
