@@ -4,8 +4,8 @@
 }
 
 
+
 /* mobile and tablet screen size */
-@media screen{
     /* General Configs */
     html {
         /* background: rgb(245,247,250); */
@@ -14,6 +14,7 @@
         font-size: 14px;
     }
     * {
+        margin: 0;
         font-size: 1.2rem;
     }
     h1,
@@ -23,9 +24,11 @@
     }
     h1 {
         font-size: 4rem;
+        padding-bottom: 2rem;
     }
     h2 {
         font-size: 2.2rem;
+        padding-bottom: 2rem;
     }
     p {
         max-width: 70ch;
@@ -43,7 +46,7 @@
         background-size: cover;
         position: relative;
         color: white;
-        margin-bottom: 20px;
+        margin-bottom: 4rem;
     }
     /* div inside of header */
     header div {
@@ -51,9 +54,10 @@
         font-size: 95vw;
         margin: auto;
         background-color: #c5192d;
-        position: relative;
+        position: absolute;
         text-align: center;
-        top: 4rem;
+        bottom: -4rem;
+        margin-bottom: 4rem;
     }
     main {
         box-shadow: 0 0 1px darkgray;
@@ -93,7 +97,7 @@
         /* text-decoration: none; */
         color: aliceblue;
     }
-}
+
 
 
 /* tablet screen size */
