@@ -145,7 +145,6 @@ footer a {
     }
     article {
         column-count: 2;
-        /* column-width: 45%; */
         column-gap: 10%;
     }
 }
